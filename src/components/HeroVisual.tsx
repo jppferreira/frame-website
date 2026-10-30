@@ -1,11 +1,12 @@
+import { asset } from '../lib/asset'
 import { FrameMark } from './FrameMark'
 import './HeroVisual.css'
 
 const satellites = [
-  { src: '/icons/icon-edit-3d.jpg', alt: '', className: 'sat-edit' },
-  { src: '/icons/icon-privacy-3d.jpg', alt: '', className: 'sat-privacy' },
-  { src: '/icons/icon-export-3d.jpg', alt: '', className: 'sat-export' },
-  { src: '/icons/icon-clips-3d.jpg', alt: '', className: 'sat-clips' },
+  { src: asset('icons/icon-edit-3d.jpg'), alt: '', className: 'sat-edit' },
+  { src: asset('icons/icon-privacy-3d.jpg'), alt: '', className: 'sat-privacy' },
+  { src: asset('icons/icon-export-3d.jpg'), alt: '', className: 'sat-export' },
+  { src: asset('icons/icon-clips-3d.jpg'), alt: '', className: 'sat-clips' },
 ]
 
 export function HeroVisual() {

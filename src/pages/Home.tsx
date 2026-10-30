@@ -3,33 +3,34 @@ import { FrameMark } from '../components/FrameMark'
 import { HeroVisual } from '../components/HeroVisual'
 import { Icon3D } from '../components/Icon3D'
 import { Parallax } from '../components/Parallax'
+import { asset } from '../lib/asset'
 import './Home.css'
 
 const pillars = [
   {
     title: 'Edit on your phone',
     body: 'Trim, split, rearrange — then export a real MP4.',
-    icon: '/icons/icon-edit-3d.jpg',
+    icon: asset('icons/icon-edit-3d.jpg'),
   },
   {
     title: 'Private by default',
     body: 'No account. No cloud library. No ad SDKs.',
-    icon: '/icons/icon-privacy-3d.jpg',
+    icon: asset('icons/icon-privacy-3d.jpg'),
   },
   {
     title: 'Fast path to export',
     body: 'Open, edit, share — without a paywall wall.',
-    icon: '/icons/icon-export-3d.jpg',
+    icon: asset('icons/icon-export-3d.jpg'),
   },
 ]
 
 const snapshots = [
-  { label: 'Clips', icon: '/icons/icon-clips-3d.jpg' },
-  { label: 'Titles', icon: '/icons/icon-titles-3d.jpg' },
-  { label: 'Audio', icon: '/icons/icon-audio-3d.jpg' },
-  { label: 'Ratios', icon: '/icons/icon-ratio-3d.jpg' },
-  { label: 'Projects', icon: '/icons/icon-projects-3d.jpg' },
-  { label: 'Export', icon: '/icons/icon-export-3d.jpg' },
+  { label: 'Clips', icon: asset('icons/icon-clips-3d.jpg') },
+  { label: 'Titles', icon: asset('icons/icon-titles-3d.jpg') },
+  { label: 'Audio', icon: asset('icons/icon-audio-3d.jpg') },
+  { label: 'Ratios', icon: asset('icons/icon-ratio-3d.jpg') },
+  { label: 'Projects', icon: asset('icons/icon-projects-3d.jpg') },
+  { label: 'Export', icon: asset('icons/icon-export-3d.jpg') },
 ]
 
 export function Home() {
@@ -109,7 +110,7 @@ export function Home() {
 
       <section className="section section-tight privacy-band">
         <Parallax className="container privacy-band-inner" speed={0.12} clamp={50}>
-          <Icon3D src="/icons/icon-privacy-3d.jpg" size="lg" />
+          <Icon3D src={asset('icons/icon-privacy-3d.jpg')} size="lg" />
           <div>
             <p className="eyebrow">Privacy-first</p>
             <h2>Editing stays on your device.</h2>
@@ -125,7 +126,7 @@ export function Home() {
         <div className="container">
           <Parallax className="download-panel" speed={0.1} clamp={44}>
             <div className="download-visual">
-              <Icon3D src="/icons/icon-export-3d.jpg" size="lg" />
+              <Icon3D src={asset('icons/icon-export-3d.jpg')} size="lg" />
             </div>
             <div>
               <p className="eyebrow">Availability</p>
