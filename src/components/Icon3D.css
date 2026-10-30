@@ -1,0 +1,24 @@
+.icon-3d {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.icon-3d img {
+  width: 100%;
+  height: auto;
+  border-radius: 22%;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35));
+}
+
+.icon-3d-sm {
+  width: 52px;
+}
+
+.icon-3d-md {
+  width: 72px;
+}
+
+.icon-3d-lg {
+  width: 96px;
+}
